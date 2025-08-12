@@ -11,7 +11,7 @@ This is a small web project that displays information about fish in *Stardew Val
 
 This is a **fan-made hobby project** created for fun and personal learning.  
 It is **not for commercial use**, and no money is being made from it.  
-This project is **not affiliated with, endorsed, or sponsored** by ConcernedApe, Chucklefish, or the official *Stardew Valley* team.  
+This project is **not affiliated with, endorsed, or sponsored** by ConcernedApe or the official *Stardew Valley* team.  
 
 All rights for the game, assets, and related media belong to their respective owners.
 
