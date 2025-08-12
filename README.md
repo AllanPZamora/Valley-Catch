@@ -18,9 +18,3 @@ All rights for the game, assets, and related media belong to their respective ow
 ## Purpose
 
 The goal of this project is to provide an interactive and educational way to view fish data from *Stardew Valley* while practicing web development skills.
-
-## License
-
-The source code for this project is released under the [MIT License](LICENSE).  
-Game data, names, and images are the property of ConcernedApe and other copyright holders.  
-These assets are used here under fair use for non-commercial, educational purposes only.
