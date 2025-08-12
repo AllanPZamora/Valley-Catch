@@ -1,4 +1,5 @@
 # Stardew Valley Fish Info App
+# Valley Catch
 
 This is a small web project that displays information about fish in *Stardew Valley* in a clickable table format, with details shown for each fish. All fish data is loaded from a JSON file, and images are stored locally for fast loading.
 
