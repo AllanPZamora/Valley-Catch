@@ -5,7 +5,7 @@ This is a small web project that displays information about fish in *Stardew Val
 ## Credits
 
 - All game information and images are sourced from the [Stardew Valley Wiki](https://stardewvalleywiki.com/Stardew_Valley_Wiki).  
-- *Stardew Valley* is created by **ConcernedApe** and published by **Chucklefish** (PC) and other publishers on various platforms.
+- *Stardew Valley* is created by **ConcernedApe** and publishers on various platforms.
 
 ## Disclaimer
 
