@@ -64,7 +64,7 @@ function createItemTable(category) {
         cell.dataset.category = cellCategory;
         
         // Create cell content
-        const imagePath = `assets/fishdata/images/${item.image}`;
+        const imagePath = `assets/fishimgs/${item.image}`;
         cell.innerHTML = `
             <img src="${imagePath}" alt="${item.name}" class="fish-image" onerror="this.style.display='none'; this.nextElementSibling.style.fontSize='12px';">
             <div class="fish-name">${item.name}</div>
