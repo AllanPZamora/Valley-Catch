@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("assets/site/wallpaper.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.placeholder-box {
+    border: 2px solid black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+}
+
+.info-display {
+    border: 2px solid black;
+    height: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 6px;
+    overflow-y: auto;
+}
+
+.main-box {
+    background-color: rgba(245, 222, 179, 0.85);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.table-container {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    /* Default: 10 columns for desktop */
+    grid-template-columns: repeat(10, 1fr);
+}
+
+/* Responsive grid columns */
+/* Mobile phones: 4 columns */
+@media (max-width: 576px) {
+    .table-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 10px;
+    }
+}
+
+/* Small tablets: 6 columns */
+@media (min-width: 577px) and (max-width: 768px) {
+    .table-container {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 7px;
+        padding: 12px;
+    }
+}
+
+/* Large tablets: 8 columns */
+@media (min-width: 769px) and (max-width: 992px) {
+    .table-container {
+        grid-template-columns: repeat(8, 1fr);
+        gap: 8px;
+        padding: 15px;
+    }
+}
+
+/* Desktop: 10 columns (default) */
+@media (min-width: 993px) {
+    .table-container {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+.table-cell {
+    width: 100%;
+    aspect-ratio: 1; /* Keeps cells square */
+    max-width: 70px; /* Maximum size on large screens */
+    min-width: 45px; /* Minimum size on small screens */
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+/* Responsive cell sizing */
+@media (max-width: 576px) {
+    .table-cell {
+        min-width: 60px;
+        max-width: 70px;
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .table-cell {
+        min-width: 55px;
+        max-width: 65px;
+        font-size: 9px;
+    }
+}
+
+.table-cell:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: scale(1.05);
+    border-color: #007bff;
+    z-index: 10;
+}
+
+.table-cell.selected {
+    background: rgba(0, 123, 255, 0.4);
+    border-color: #007bff;
+    border-width: 2px;
+}
+
+.fish-image {
+    width: 60%; /* Use percentage instead of fixed pixels */
+    height: 60%;
+    object-fit: contain;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+}
+
+.fish-name {
+    font-size: inherit; /* Use the cell's font-size */
+    font-weight: bold;
+    line-height: 1.1;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Allow up to 2 lines */
+    -webkit-box-orient: vertical;
+    text-align: center;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Responsive font sizes for fish names */
+@media (max-width: 576px) {
+    .fish-name {
+        font-size: 7px;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .fish-name {
+        font-size: 8px;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (min-width: 769px) {
+    .fish-name {
+        font-size: 9px;
+        -webkit-line-clamp: 2;
+    }
+}
+
+.empty-cell {
+    background: transparent !important;
+    border: none !important;
+    cursor: default !important;
+}
+
+.empty-cell:hover {
+    transform: none !important;
+}
+
+.fish-info h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.fish-detail {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.fish-detail strong {
+    color: #34495e;
+    display: inline-block;
+    width: 80px;
+    font-size: 14px;
+}
+
+.season-tag, .difficulty-tag, .behavior-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 11px;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.season-tag {
+    background-color: #e8f5e8;
+    color: #2e7d2e;
+    border: 1px solid #2e7d2e;
+}
+
+.difficulty-tag {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #856404;
+}
+
+.behavior-tag {
+    background-color: #e2e3f1;
+    color: #383d41;
+    border: 1px solid #383d41;
+}
+
+.crab-cell, .food-cell, .jelly-cell {
+    border-color: #6c757d;
+}
+
+.crab-cell {
+    background: rgba(255, 193, 7, 0.2);
+}
+
+.food-cell {
+    background: rgba(40, 167, 69, 0.2);
+}
+
+.jelly-cell {
+    background: rgba(220, 53, 69, 0.2);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .main-box {
+        padding: 15px;
+    }
+    
+    .info-display {
+        height: 400px;
+        padding: 15px;
+    }
+    
+    .placeholder-box {
+        height: 250px;
+    }
+    
+    /* Stack vertically on mobile */
+    .mobile-stack {
+        flex-direction: column;
+    }
+    
+    .mobile-stack .col-md-4,
+    .mobile-stack .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Title responsive sizing */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
