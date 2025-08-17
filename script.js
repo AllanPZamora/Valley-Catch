@@ -51,14 +51,14 @@ function createItemTable() {
         return;
     }
     
-    // Create item cells in sequential order (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12...)
+    // Create item cells in sequential order
     allItems.forEach((item, index) => {
         const cell = document.createElement("div");
         const cellCategory = item.category;
         cell.className = `table-cell ${cellCategory === 'fish' ? '' : cellCategory.slice(0, -1) + '-cell'}`;
         cell.dataset.itemIndex = index;
         cell.dataset.category = cellCategory;
-        cell.dataset.itemId = item.id; // Store the ID for reference
+        cell.dataset.itemId = item.id;
         
         // Create cell content
         const imagePath = `assets/fishimgs/${item.image}`;
@@ -80,9 +80,19 @@ function createItemTable() {
         tableContainer.appendChild(cell);
     });
     
-    // Fill remaining empty cells to complete rows of 10
-    const totalRows = Math.ceil(allItems.length / 10);
-    const totalCells = totalRows * 10;
+    // Get current screen size to determine columns per row
+    function getColumnsPerRow() {
+        const width = window.innerWidth;
+        if (width <= 576) return 4;
+        if (width <= 768) return 6;
+        if (width <= 992) return 8;
+        return 10;
+    }
+    
+    // Fill remaining empty cells to complete rows
+    const columnsPerRow = getColumnsPerRow();
+    const totalRows = Math.ceil(allItems.length / columnsPerRow);
+    const totalCells = totalRows * columnsPerRow;
     const emptyCells = totalCells - allItems.length;
     
     for (let i = 0; i < emptyCells; i++) {
@@ -153,6 +163,17 @@ function displayItemInfo(item, category) {
     infoHTML += '</div>';
     infoContainer.innerHTML = infoHTML;
 }
+
+// Handle window resize to recalculate empty cells
+let resizeTimeout;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        if (gameData) {
+            createItemTable();
+        }
+    }, 250);
+});
 
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', () => {
