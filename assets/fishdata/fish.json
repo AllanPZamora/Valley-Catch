@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Pufferfish",
+      "image": "Pufferfish.png",
       "description": "Inflates when threatened.",
       "location": "Ocean • Ginger Island",
       "time": "12pm – 4pm",
@@ -15,6 +16,7 @@
     {
       "id": 2,
       "name": "Anchovy",
+      "image": "Anchovy.png",
       "description": "A small silver fish found in the ocean.",
       "location": "Ocean",
       "time": "Any",
@@ -27,6 +29,7 @@
     {
       "id": 3,
       "name": "Tuna",
+      "image": "Tuna.png",
       "description": "A large fish that lives in the ocean.",
       "location": "Ocean • Ginger Island",
       "time": "6am – 7pm",
@@ -39,6 +42,7 @@
     {
       "id": 4,
       "name": "Sardine",
+      "image": "Sardine.png",
       "description": "A common ocean fish.",
       "location": "Ocean",
       "time": "6am – 7pm",
@@ -51,6 +55,7 @@
     {
       "id": 5,
       "name": "Bream",
+      "image": "Bream.png",
       "description": "A fairly common river fish that becomes active at night.",
       "location": "River",
       "time": "6pm – 2am",
@@ -63,6 +68,7 @@
     {
       "id": 6,
       "name": "Largemouth Bass",
+      "image": "Largemouth Bass.png",
       "description": "A popular fish that lives in lakes.",
       "location": "Mountain Lake • Wilderness Farm",
       "time": "6am – 7pm",
@@ -75,6 +81,7 @@
     {
       "id": 7,
       "name": "Smallmouth Bass",
+      "image": "Smallmouth Bass.png",
       "description": "A freshwater fish that is very sensitive to pollution.",
       "location": "Town River • Forest Pond",
       "time": "Any",
@@ -87,6 +94,7 @@
     {
       "id": 8,
       "name": "Rainbow Trout",
+      "image": "Rainbow Trout.png",
       "description": "A freshwater trout with colorful markings.",
       "location": "River • Mountain Lake",
       "time": "6am – 7pm",
@@ -99,6 +107,7 @@
     {
       "id": 9,
       "name": "Salmon",
+      "image": "Salmon.png",
       "description": "Swims upstream to lay its eggs.",
       "location": "River",
       "time": "6am – 7pm",
@@ -111,6 +120,7 @@
     {
       "id": 10,
       "name": "Walleye",
+      "image": "Walleye.png",
       "description": "A freshwater fish caught at night.",
       "location": "River • Mountain Lake • Forest Pond • Forest Farm Pond",
       "time": "12pm – 2am",
@@ -123,6 +133,7 @@
     {
       "id": 11,
       "name": "Perch",
+      "image": "Perch.png",
       "description": "A freshwater fish of the winter.",
       "location": "River • Mountain Lake • Forest Pond",
       "time": "Any",
@@ -135,6 +146,7 @@
     {
       "id": 12,
       "name": "Carp",
+      "image": "Carp.png",
       "description": "A common pond fish.",
       "location": "Mountain Lake • Secret Woods • The Sewers • Mutant Bug Lair",
       "time": "Any",
@@ -147,6 +159,7 @@
     {
       "id": 13,
       "name": "Catfish",
+      "image": "Catfish.png",
       "description": "An uncommon fish found in streams.",
       "location": "River • Secret Woods • Witch's Swamp",
       "time": "6am - 12am",
@@ -159,6 +172,7 @@
     {
       "id": 14,
       "name": "Pike",
+      "image": "Pike.png",
       "description": "A freshwater fish that's difficult to catch.",
       "location": "River • Forest Pond",
       "time": "Any",
@@ -171,6 +185,7 @@
     {
       "id": 15,
       "name": "Sunfish",
+      "image": "Sunfish.png",
       "description": "A common river fish.",
       "location": "River",
       "time": "6am – 7pm",
@@ -183,6 +198,7 @@
     {
       "id": 16,
       "name": "Red Mullet",
+      "image": "Red Mullet.png",
       "description": "Long ago these were kept as pets.",
       "location": "Ocean",
       "time": "6am – 7pm",
@@ -195,6 +211,7 @@
     {
       "id": 17,
       "name": "Herring",
+      "image": "Herring.png",
       "description": "A common ocean fish.",
       "location": "Ocean",
       "time": "Any",
@@ -207,6 +224,7 @@
     {
       "id": 18,
       "name": "Eel",
+      "image": "Eel.png",
       "description": "A long, slippery little fish.",
       "location": "Ocean",
       "time": "4pm – 2am",
@@ -219,6 +237,7 @@
     {
       "id": 19,
       "name": "Octopus",
+      "image": "Octopus.png",
       "description": "A mysterious and intelligent creature.",
       "location": "The Beach • Ginger Island • Submarine at Night Market",
       "time": "6am – 1pm",
@@ -231,6 +250,7 @@
     {
       "id": 20,
       "name": "Red Snapper",
+      "image": "Red Snapper.png",
       "description": "A popular fish with a nice red color.",
       "location": "Ocean • Beach Farm",
       "time": "6am – 7pm",
@@ -243,6 +263,7 @@
     {
       "id": 21,
       "name": "Squid",
+      "image": "Squid.png",
       "description": "A deep sea creature that can grow to enormous size.",
       "location": "Ocean",
       "time": "6pm – 2am",
@@ -255,6 +276,7 @@
     {
       "id": 24,
       "name": "Sea Cucumber",
+      "image": "Sea Cucumber.png",
       "description": "A slippery, slimy creature found on the ocean floor.",
       "location": "Ocean • Submarine at Night Market",
       "time": "6am – 7pm",
@@ -267,6 +289,7 @@
     {
       "id": 25,
       "name": "Super Cucumber",
+      "image": "Super Cucumber.png",
       "description": "A rare, purple variety of sea cucumber.",
       "location": "Ocean • Ginger Island • Submarine at Night Market",
       "time": "6pm – 2am",
@@ -279,6 +302,7 @@
     {
       "id": 26,
       "name": "Ghostfish",
+      "image": "Ghostfish.png",
       "description": "A pale, blind fish found in underground lakes.",
       "location": "The Mines",
       "time": "Any",
@@ -291,6 +315,7 @@
     {
       "id": 28,
       "name": "Stonefish",
+      "image": "Stonefish.png",
       "description": "A bizarre fish that's shaped like a brick.",
       "location": "Floor 20 of The Mines",
       "time": "Any",
@@ -303,6 +328,7 @@
     {
       "id": 29,
       "name": "Crimsonfish",
+      "image": "Crimsonfish.png",
       "description": "Lives deep in the ocean but likes to lay its eggs in the warm summer water.",
       "location": "Ocean",
       "time": "Any",
@@ -315,6 +341,7 @@
     {
       "id": 30,
       "name": "Angler",
+      "image": "Angler.png",
       "description": "Uses a bioluminescent dangler to attract prey.",
       "location": "Pelican Town",
       "time": "Any",
@@ -327,6 +354,7 @@
     {
       "id": 31,
       "name": "Ice Pip",
+      "image": "Ice Pip.png",
       "description": "A rare fish that thrives in extremely cold conditions.",
       "location": "The Mines, Floor 60",
       "time": "Any",
@@ -339,6 +367,7 @@
     {
       "id": 32,
       "name": "Lava Eel",
+      "image": "Lava Eel.png",
       "description": "It can somehow survive in pools of red-hot lava.",
       "location": "Floor 100 of The Mines • Volcano Caldera",
       "time": "Any",
@@ -351,6 +380,7 @@
     {
       "id": 33,
       "name": "Legend",
+      "image": "Legend.png",
       "description": "The king of all fish! They said he'd never be caught.",
       "location": "Mountain Lake",
       "time": "Any",
@@ -363,6 +393,7 @@
     {
       "id": 34,
       "name": "Sandfish",
+      "image": "Sandfish.png",
       "description": "It tries to hide using camouflage.",
       "location": "The Desert",
       "time": "6am – 8pm",
@@ -375,6 +406,7 @@
     {
       "id": 35,
       "name": "Scorpion Carp",
+      "image": "Scorpion Carp.png",
       "description": "It's like a regular carp but with a sharp stinger.",
       "location": "The Desert",
       "time": "6am – 8pm",
@@ -387,6 +419,7 @@
     {
       "id": 36,
       "name": "Flounder",
+      "image": "Flounder.png",
       "description": "It lives on the bottom, so both eyes are on top of its head.",
       "location": "Ocean • Ginger Island",
       "time": "6am – 8pm",
@@ -399,6 +432,7 @@
     {
       "id": 37,
       "name": "Midnight Carp",
+      "image": "Midnight Carp.png",
       "description": "This shy fish only feels comfortable at night.",
       "location": "Mountain Lake • Forest Pond • Ginger Island North & West",
       "time": "10pm – 2am",
@@ -411,6 +445,7 @@
     {
       "id": 39,
       "name": "Mutant Carp",
+      "image": "Mutant Carp.png",
       "description": "The strange waters of the sewer turned this carp into a monstrosity.",
       "location": "The Sewers",
       "time": "Any",
@@ -423,6 +458,7 @@
     {
       "id": 40,
       "name": "Sturgeon",
+      "image": "Sturgeon.png",
       "description": "An ancient bottom-feeder with a dwindling population. Females can live up to 150 years.",
       "location": "Mountain Lake",
       "time": "6am – 7pm",
@@ -435,6 +471,7 @@
     {
       "id": 41,
       "name": "Tiger Trout",
+      "image": "Tiger Trout.png",
       "description": "A rare hybrid trout that cannot bear offspring of its own.",
       "location": "River",
       "time": "6am – 7pm",
@@ -447,6 +484,7 @@
     {
       "id": 42,
       "name": "Bullhead",
+      "image": "Bullhead.png",
       "description": "A relative of the catfish that eats a variety of foods off the lake bottom.",
       "location": "Mountain Lake",
       "time": "Any",
@@ -459,6 +497,7 @@
     {
       "id": 43,
       "name": "Tilapia",
+      "image": "Tilapia.png",
       "description": "A primarily vegetarian fish that prefers warm water.",
       "location": "Ocean • Ginger Island",
       "time": "6am – 2pm",
@@ -471,6 +510,7 @@
     {
       "id": 44,
       "name": "Chub",
+      "image": "Chub.png",
       "description": "A common freshwater fish known for its voracious appetite.",
       "location": "Mountain Lake • Forest River",
       "time": "Any",
@@ -483,6 +523,7 @@
     {
       "id": 45,
       "name": "Dorado",
+      "image": "Dorado.png",
       "description": "A fierce carnivore with brilliant orange scales.",
       "location": "Forest River",
       "time": "6am – 7pm",
@@ -495,6 +536,7 @@
     {
       "id": 46,
       "name": "Albacore",
+      "image": "Albacore.png",
       "description": "Prefers temperature \"edges\" where cool and warm water meet.",
       "location": "Ocean",
       "time": "6am – 11am, 6pm – 2am",
@@ -507,6 +549,7 @@
     {
       "id": 47,
       "name": "Shad",
+      "image": "Shad.png",
       "description": "Lives in a school at sea, but returns to the rivers to spawn.",
       "location": "River",
       "time": "9am – 2am",
@@ -519,6 +562,7 @@
     {
       "id": 48,
       "name": "Lingcod",
+      "image": "Lingcod.png",
       "description": "A fearsome predator that will eat almost anything it can cram into its mouth.",
       "location": "River • Mountain Lake",
       "time": "Any",
@@ -531,6 +575,7 @@
     {
       "id": 49,
       "name": "Halibut",
+      "image": "Halibut.png",
       "description": "A flat fish that lives on the ocean floor.",
       "location": "Ocean",
       "time": "6am – 11am, 7pm – 2am",
@@ -543,6 +588,7 @@
     {
       "id": 57,
       "name": "Woodskip",
+      "image": "Woodskip.png",
       "description": "A very sensitive fish that can only live in pools deep in the forest.",
       "location": "Secret Woods • Forest Farm",
       "time": "Any",
@@ -555,6 +601,7 @@
     {
       "id": 58,
       "name": "Glacierfish",
+      "image": "Glacierfish.png",
       "description": "Builds a nest on the underside of glaciers.",
       "location": "Cindersap Forest",
       "time": "Any",
@@ -567,6 +614,7 @@
     {
       "id": 59,
       "name": "Void Salmon",
+      "image": "Void Salmon.png",
       "description": "A salmon, twisted by void energy. The fresh meat is jet black, but rapidly turns pink when exposed to air.",
       "location": "Witch's Swamp",
       "time": "Any",
@@ -579,6 +627,7 @@
     {
       "id": 60,
       "name": "Slimejack",
+      "image": "Slimejack.png",
       "description": "He's coated in a very thick layer of slime. He keeps slipping out of your hands!",
       "location": "Mutant Bug Lair",
       "time": "Any",
@@ -591,6 +640,7 @@
     {
       "id": 61,
       "name": "Midnight Squid",
+      "image": "Midnight Squid.png",
       "description": "A strange and mysterious denizen of the ocean's twilight depths.",
       "location": "Submarine at Night Market",
       "time": "Anytime during Night Market (5pm - 2am)",
@@ -603,6 +653,7 @@
     {
       "id": 62,
       "name": "Spook Fish",
+      "image": "Spook Fish.png",
       "description": "The huge eyes can detect the faint silhouettes of prey.",
       "location": "Submarine at Night Market",
       "time": "Anytime during Night Market (5pm - 2am)",
@@ -615,6 +666,7 @@
     {
       "id": 63,
       "name": "Blobfish",
+      "image": "Blobfish.png",
       "description": "This odd creature floats above the ocean floor, consuming any edible material in its path.",
       "location": "Submarine at Night Market",
       "time": "Anytime during Night Market (5pm - 2am)",
@@ -627,6 +679,7 @@
     {
       "id": 64,
       "name": "Stingray",
+      "image": "Stingray.png",
       "description": "Despite having a toxic stinger, these fish are shy and prefer to avoid humans.",
       "location": "Pirate Cove",
       "time": "Any",
@@ -639,6 +692,7 @@
     {
       "id": 65,
       "name": "Lionfish",
+      "image": "Lionfish.png",
       "description": "An aggressive, predatory fish with venomous spines.",
       "location": "Ginger Island",
       "time": "Any",
@@ -651,6 +705,7 @@
     {
       "id": 66,
       "name": "Blue Discus",
+      "image": "Blue Discus.png",
       "description": "A brightly colored tropical fish that is popular in aquariums.",
       "location": "Ginger Island",
       "time": "Any",
@@ -663,6 +718,7 @@
     {
       "id": 72,
       "name": "Goby",
+      "image": "Goby.png",
       "description": "Some types of Gobies can climb up waterfalls.",
       "location": "Cindersap Forest Waterfalls",
       "time": "Any",
@@ -677,6 +733,7 @@
     {
       "id": 22,
       "name": "Seaweed",
+      "image": "Seaweed.png",
       "description": "It can be used in cooking.",
       "source": "Fishing Pole: Ocean • Foraging: The Beach • Garbage Cans • Fish Pond • The \"Dangerous Mines\"",
       "season": ["All"],
@@ -687,6 +744,7 @@
     {
       "id": 23,
       "name": "Green Algae",
+      "image": "Green Algae.png",
       "description": "It's really slimy.",
       "source": "Fishing Pole: freshwater • Green Slimes • Garbage Cans • Fish Pond • Cat",
       "season": ["All"],
@@ -697,6 +755,7 @@
     {
       "id": 27,
       "name": "White Algae",
+      "image": "White Algae.png",
       "description": "It's super slimy.",
       "source": "Fishing Pole • Monster drops • Fish Pond (Ghostfish)",
       "season": ["All"],
@@ -709,6 +768,7 @@
     {
       "id": 38,
       "name": "Clam",
+      "image": "Clam.png",
       "description": "There's a chewy little guy in there...",
       "source": "Crab Pot: Saltwater • Foraging: The Beach • Foraging: Dangerous Mines • Turtle",
       "season": ["All"],
@@ -719,6 +779,7 @@
     {
       "id": 50,
       "name": "Lobster",
+      "image": "Lobster.png",
       "description": "A large ocean-dwelling crustacean with a strong tail.",
       "source": "Crab Pot: Saltwater • Turtle • Statue of Endless Fortune",
       "season": ["All"],
@@ -729,6 +790,7 @@
     {
       "id": 51,
       "name": "Crayfish",
+      "image": "Crayfish.png",
       "description": "A small freshwater relative of the lobster.",
       "source": "Crab Pot: Freshwater • Turtle",
       "season": ["All"],
@@ -739,6 +801,7 @@
     {
       "id": 52,
       "name": "Crab",
+      "image": "Crab.png",
       "description": "A marine crustacean with two powerful pincers.",
       "source": "Crab Pot: Saltwater • Monster Drops: Rock Crab • Lava Crab • Turtle",
       "season": ["All"],
@@ -749,6 +812,7 @@
     {
       "id": 53,
       "name": "Cockle",
+      "image": "Cockle.png",
       "description": "A common saltwater clam.",
       "source": "Crab Pot: Saltwater • Foraging: The Beach • Foraging: Dangerous Mines • Turtle",
       "season": ["All"],
@@ -759,6 +823,7 @@
     {
       "id": 54,
       "name": "Mussel",
+      "image": "Mussel.png",
       "description": "A common bivalve that often lives in clusters.",
       "source": "Crab Pot: Saltwater • Foraging: The Beach • Mussel Node • Turtle",
       "season": ["All"],
@@ -769,6 +834,7 @@
     {
       "id": 55,
       "name": "Shrimp",
+      "image": "Shrimp.png",
       "description": "A scavenger that feeds off the ocean floor. Widely prized for its meat.",
       "source": "Crab Pot: Saltwater",
       "season": ["All"],
@@ -779,6 +845,7 @@
     {
       "id": 56,
       "name": "Snail",
+      "image": "Snail.png",
       "description": "A wide-ranging mollusc that lives in a spiral shell.",
       "source": "Crab Pot: Freshwater",
       "season": ["All"],
@@ -789,6 +856,7 @@
     {
       "id": 57,
       "name": "Periwinkle",
+      "image": "Periwinkle.png",
       "description": "A tiny freshwater snail that lives in a blue shell.",
       "source": "Crab Pot: Freshwater",
       "season": ["All"],
@@ -799,6 +867,7 @@
     {
       "id": 58,
       "name": "Oyster",
+      "image": "Oyster.png",
       "description": "Constantly filters water to find food. In the process, it removes dangerous toxins from the environment.",
       "source": "Crab Pot: Saltwater • Foraging: The Beach • Foraging: Dangerous Mines",
       "season": ["All"],
@@ -811,6 +880,7 @@
     {
       "id": 67,
       "name": "River Jelly",
+      "image": "River Jelly.png",
       "description": "A rare jelly found in freshwater.",
       "source": "Fishing Pole • Midnight Carp Fish Pond • Bookseller • Cat",
       "buffs": ["Max Energy (+30)"],
@@ -823,6 +893,7 @@
     {
       "id": 68,
       "name": "Cave Jelly",
+      "image": "Cave Jelly.png",
       "description": "A rare jelly found in underground lakes.",
       "source": "Fishing Pole • Lava Eel Fish Pond • Bookseller • Turtle",
       "buffs": ["Luck (+1)"],
@@ -835,6 +906,7 @@
     {
       "id": 69,
       "name": "Sea Jelly",
+      "image": "Sea Jelly.png",
       "description": "A rare jelly found in the ocean.",
       "source": "Fishing Pole • Flounder Fish Pond • Bookseller • Turtle",
       "buffs": ["Fishing (+1)"],
