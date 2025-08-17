@@ -1,6 +1,4 @@
-
 let gameData = null;
-let currentCategory = 'all';
 
 function loadFishData() {
     fetch("assets/fishdata/fish.json")
@@ -12,7 +10,7 @@ function loadFishData() {
         })
         .then(data => {
             gameData = data;
-            createItemTable(currentCategory);
+            createItemTable();
         })
         .catch(error => {
             console.error("Error loading fish.json:", error);
@@ -29,39 +27,38 @@ function loadFishData() {
         });
 }
 
-function createItemTable(category) {
+function createItemTable() {
     if (!gameData) return;
     
     const tableContainer = document.getElementById("fish-table");
-    let allItems = [];
     
-    if (category === 'all') {
-        // Combine all categories
-        allItems = [
-            ...gameData.fish.map(item => ({...item, category: 'fish'})),
-            ...gameData.crabpots.map(item => ({...item, category: 'crabpots'})),
-            ...gameData.foodstuffs.map(item => ({...item, category: 'foodstuffs'})),
-            ...gameData.jellys.map(item => ({...item, category: 'jellys'}))
-        ];
-    } else {
-        allItems = gameData[category] ? gameData[category].map(item => ({...item, category})) : [];
-    }
+    // Combine all categories and sort by ID
+    let allItems = [
+        ...gameData.fish.map(item => ({...item, category: 'fish'})),
+        ...gameData.crabpots.map(item => ({...item, category: 'crabpots'})),
+        ...gameData.foodstuffs.map(item => ({...item, category: 'foodstuffs'})),
+        ...gameData.jellys.map(item => ({...item, category: 'jellys'}))
+    ];
+    
+    // Sort by ID number
+    allItems.sort((a, b) => a.id - b.id);
     
     // Clear existing content
     tableContainer.innerHTML = '';
     
     if (allItems.length === 0) {
-        tableContainer.innerHTML = '<div style="text-align: center; padding: 20px;">No items found in this category</div>';
+        tableContainer.innerHTML = '<div style="text-align: center; padding: 20px;">No items found</div>';
         return;
     }
     
-    // Create item cells
+    // Create item cells in sequential order (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12...)
     allItems.forEach((item, index) => {
         const cell = document.createElement("div");
         const cellCategory = item.category;
         cell.className = `table-cell ${cellCategory === 'fish' ? '' : cellCategory.slice(0, -1) + '-cell'}`;
         cell.dataset.itemIndex = index;
         cell.dataset.category = cellCategory;
+        cell.dataset.itemId = item.id; // Store the ID for reference
         
         // Create cell content
         const imagePath = `assets/fishimgs/${item.image}`;
@@ -83,8 +80,9 @@ function createItemTable(category) {
         tableContainer.appendChild(cell);
     });
     
-    // Fill remaining empty cells to complete the grid if needed
-    const totalCells = Math.ceil(allItems.length / 10) * 10;
+    // Fill remaining empty cells to complete rows of 10
+    const totalRows = Math.ceil(allItems.length / 10);
+    const totalCells = totalRows * 10;
     const emptyCells = totalCells - allItems.length;
     
     for (let i = 0; i < emptyCells; i++) {
@@ -156,31 +154,7 @@ function displayItemInfo(item, category) {
     infoContainer.innerHTML = infoHTML;
 }
 
-// Tab functionality
-function initializeTabs() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            // Update current category and reload table
-            currentCategory = button.dataset.category;
-            createItemTable(currentCategory);
-            
-            // Reset info panel
-            const infoContainer = document.getElementById("fish-info");
-            infoContainer.className = "placeholder-box";
-            infoContainer.innerHTML = `<p>Click on ${currentCategory === 'all' ? 'an item' : currentCategory === 'fish' ? 'a fish' : 'an item'} to see its information</p>`;
-        });
-    });
-}
-
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', () => {
     loadFishData();
-    initializeTabs();
 });
