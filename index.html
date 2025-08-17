@@ -11,8 +11,11 @@
 <style>
 
     body {
-            background: url('/assets/site/wallpaper.jpg') no-repeat center center fixed;
+            font-family: Arial, sans-serif;
+            background: url("assets/site/wallpaper.jpg") no-repeat center center fixed;
             background-size: cover;
+            margin: 0;
+            padding: 0;
     }
 
     .placeholder-box {
@@ -22,6 +25,17 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+    }
+
+    .info-display {
+            border: 2px solid black;
+            height: 500px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 6px;
+            overflow-y: auto;
     }
 
     .main-box {
@@ -29,17 +43,150 @@
             border-radius: 8px;
             padding: 20px;
     }
+
+    .table-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* 10 columns */
+            gap: 5px;
+            justify-items: center;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+    }
+
+    .table-cell {
+        width: 55px;  /* Bigger width */
+        height: 55px; /* Bigger height */
+        border: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.8);
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .table-cell:hover {
+        background: rgba(255, 255, 255, 0.95);
+        transform: scale(1.1);
+        border-color: #007bff;
+        z-index: 10;
+    }
+
+    .table-cell.selected {
+        background: rgba(0, 123, 255, 0.4);
+        border-color: #007bff;
+        border-width: 2px;
+    }
+
+    .fish-image {
+        width: 35px;  /* Bigger image */
+        height: 35px; /* Bigger image */
+        object-fit: contain;
+        margin-bottom: 2px;
+    }
+
+    .fish-name {
+        font-size: 9px; /* Bigger font */
+        font-weight: bold;
+        line-height: 1;
+        max-width: 100%;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .empty-cell {
+        background: transparent !important;
+        border: none !important;
+        cursor: default !important;
+    }
+
+    .empty-cell:hover {
+        transform: none !important;
+    }
+
+    .fish-info h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+    }
+
+    .fish-detail {
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    .fish-detail strong {
+        color: #34495e;
+        display: inline-block;
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .season-tag, .difficulty-tag, .behavior-tag {
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 12px;
+        font-size: 11px;
+        margin: 2px;
+        font-weight: bold;
+    }
+
+    .season-tag {
+        background-color: #e8f5e8;
+        color: #2e7d2e;
+        border: 1px solid #2e7d2e;
+    }
+
+    .difficulty-tag {
+        background-color: #fff3cd;
+        color: #856404;
+        border: 1px solid #856404;
+    }
+
+    .behavior-tag {
+        background-color: #e2e3f1;
+        color: #383d41;
+        border: 1px solid #383d41;
+    }
+
+    /* Removed all tab-related styles */
+
+    .crab-cell, .food-cell, .jelly-cell {
+        border-color: #6c757d;
+    }
+
+    .crab-cell {
+        background: rgba(255, 193, 7, 0.2);
+    }
+
+    .food-cell {
+        background: rgba(40, 167, 69, 0.2);
+    }
+
+    .jelly-cell {
+        background: rgba(220, 53, 69, 0.2);
+    }
     
 </style>
 </head>
 
 <body>
 
-<div class="container my-4">
+<div class="container-fluid my-4">
 
     <!-- Title -->
     <div class="row">
         <div class="col text-center">
+            <br>
             <h1>Valley Catch</h1>
         </div>
     </div>
@@ -48,20 +195,23 @@
     <div class="main-box mt-4">
         <div class="row">
             <!-- Info Section -->
-            <div class="col-md-6 mb-3">
-                <div class="placeholder-box">info</div>
+            <div class="col-md-4 mb-3">
+                <div id="fish-info" class="placeholder-box">
+                    <p>Click on an item to see its information</p>
+                </div>
             </div>
 
             <!-- Table Section -->
-            <div class="col-md-6 mb-3">
-                <div class="placeholder-box">table</div>
+            <div class="col-md-8 mb-3">
+                <!-- Removed category tabs -->
+                <div id="fish-table" class="table-container"></div>
             </div>
         </div>
     </div>
 
 </div>
 
-
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
